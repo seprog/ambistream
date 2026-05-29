@@ -1,0 +1,9 @@
+services:
+  ambistream:
+    image: ghcr.io/seprog/ambistream:latest
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf  # optional
+    ports:
+      - 1935:1935
