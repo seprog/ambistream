@@ -9,7 +9,7 @@ RUN apk add --no-cache \
       py3-pip \
       python3
 
-# Install lifx-ambilight
+# Install ambilight
 RUN git clone https://github.com/seprog/ambilight.git /opt/ambilight
-RUN python3 -m venv /opt/lifx-ambilight/venv
-RUN /opt/lifx-ambilight/venv/bin/pip install -r /opt/lifx-ambilight/requirements.txt
+RUN python3 -m venv /opt/ambilight/venv
+RUN /opt/ambilight/venv/bin/pip install -r /opt/ambilight/requirements.txt
